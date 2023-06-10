@@ -6,23 +6,24 @@ import Formatter from './formatter/Formatter.js';
 import { ConfigError, validateConfig } from './validateConfig.js';
 
 const dialectNameMap: Record<string, keyof typeof allDialects> = {
-  bigquery: 'bigquery',
-  db2: 'db2',
-  hive: 'hive',
-  mariadb: 'mariadb',
-  mysql: 'mysql',
-  n1ql: 'n1ql',
-  plsql: 'plsql',
-  postgresql: 'postgresql',
-  redshift: 'redshift',
-  spark: 'spark',
-  sqlite: 'sqlite',
-  sql: 'sql',
-  trino: 'trino',
-  transactsql: 'transactsql',
-  tsql: 'transactsql', // alias for transactsq
-  singlestoredb: 'singlestoredb',
-  snowflake: 'snowflake',
+  'bigquery': 'bigquery',
+  'db2': 'db2',
+  'hive': 'hive',
+  'mariadb': 'mariadb',
+  'mysql': 'mysql',
+  'n1ql': 'n1ql',
+  'plsql': 'plsql',
+  'postgresql': 'postgresql',
+  'redshift': 'redshift',
+  'spark': 'spark',
+  'sqlite': 'sqlite',
+  'sql': 'sql',
+  'trino': 'trino',
+  'transactsql': 'transactsql',
+  'tsql': 'transactsql', // alias for transactsq
+  'singlestoredb': 'singlestoredb',
+  'snowflake': 'snowflake',
+  'snowflake-sql': 'snowflake',
 };
 
 export const supportedDialects = Object.keys(dialectNameMap);
